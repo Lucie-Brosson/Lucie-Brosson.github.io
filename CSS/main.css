@@ -1,11 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
 body {
-    background-color:rgb(247, 199, 206);
-    margin-top: 5%;
-    margin-left:10%;
-    margin-right:10%;
+    background-color:rgb(247, 199, 206);   
 }
 
 h1 {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+
     font-size: clamp(50pt,8vw ,80pt);
     font-family: "Bahnschrift"; 
     text-align: center;
@@ -25,18 +32,24 @@ h4{
 }
 
 p {
+    margin-top: 2vw;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-bottom:2vw;
+
     font-family: Helvetica;
 }
 
 img {
+    margin-top: 1vw;
+    margin-left: 10%;
+    margin-right: 10%;
+
     color: darkblue;
 }
 
-footer {
-    background-color: darkorchid;
-}
-
 a{
+    margin-left: 10%;
     font-family: Helvetica;
     color: darkblue;
 }
@@ -49,17 +62,49 @@ a:hover{
     color: darkblue;
 }
 
+footer {
+    position: fixed;
+    bottom:0;
+    width : 100%;
+
+    padding-top: 2vw;
+
+
+    background-color: darkorchid;
+    float: middle;
+    
+}
+
+
+
 .logo {
-    width: clamp(40pt,6vw,80pt);
+    width: clamp(60pt,6vw,100pt);
+
+    margin-top: 1vw;
+    margin-left: -8%;
+
 
 }
 
 .langue {
-    color: darkblue;
+    background-color: darkblue;
+
+    width : clamp(50pt,6vw,100pt);
+    float:right;
+
+    color: pink;
+    font-size:clamp(10pt,2vw,25pt);
 }
 
 .menu{
+    width : clamp(40pt,6vw,100pt);
+    margin-top: 2vw;
     color: darkblue;
+    position: fixed;
+
+    text-align: center;
+    font-size:clamp(10pt,3vw,25pt);
+
 }   
 
 .project{
