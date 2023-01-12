@@ -1,3 +1,85 @@
 body {
-    background-color : pink;
+    background-color:rgb(247, 199, 206);
+    margin-top: 5%;
+    margin-left:10%;
+    margin-right:10%;
 }
+
+h1 {
+    font-size: clamp(50pt,8vw ,80pt);
+    font-family: "Bahnschrift"; 
+    text-align: center;
+    color: darkblue;
+}
+
+h2{
+    color: darkblue;
+}
+
+h3 {
+    color: darkblue;
+}
+
+h4{
+   color:darkblue;
+}
+
+p {
+    font-family: Helvetica;
+}
+
+img {
+    color: darkblue;
+}
+
+footer {
+    background-color: darkorchid;
+}
+
+a{
+    font-family: Helvetica;
+    color: darkblue;
+}
+
+a:visited {
+    color: darkblue;
+}
+
+a:hover{
+    color: darkblue;
+}
+
+.logo {
+    width: clamp(40pt,6vw,80pt);
+
+}
+
+.langue {
+    color: darkblue;
+}
+
+.menu{
+    color: darkblue;
+}   
+
+.project{
+    color: darkblue;
+}
+
+/*project*/
+
+.projectPortfolio {
+    color: darkblue;
+}
+
+/*projet*/
+
+.Croquis {
+    color: darkblue;
+}
+
+.copyright{
+    color: grey;
+    font-size: 8pt;
+}
+
