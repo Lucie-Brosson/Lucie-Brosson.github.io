@@ -5,7 +5,8 @@
 }
 
 body {
-    background-color:rgb(247, 199, 206);   
+    background-color:rgb(247, 199, 206);  
+    margin-bottom :170pt; 
 }
 
 h1 {
@@ -42,7 +43,7 @@ p {
 
 img {
     margin-top: 1vw;
-    margin-left: 10%;
+    margin-left: 11%;
     margin-right: 10%;
 
     color: darkblue;
@@ -66,13 +67,17 @@ footer {
     position: fixed;
     bottom:0;
     width : 100%;
-
-    padding-top: 2vw;
-
+    height: 100pt;
 
     background-color: darkorchid;
     float: middle;
+
+    font-size:12pt;
     
+    margin-top:0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;   
 }
 
 
@@ -87,12 +92,10 @@ footer {
 }
 
 .langue {
-    background-color: darkblue;
-
     width : clamp(50pt,6vw,100pt);
     float:right;
 
-    color: pink;
+    color:darkblue;
     font-size:clamp(10pt,2vw,25pt);
 }
 
@@ -126,5 +129,9 @@ footer {
 .copyright{
     color: grey;
     font-size: 8pt;
+}
+
+.imgLink{
+    
 }
 
