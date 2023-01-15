@@ -46,17 +46,17 @@ img {
     margin-left: 11%;
     margin-right: 10%;
 
-    color: darkblue;
+    color: white;
 }
 
 a{
     margin-left: 10%;
     font-family: Helvetica;
-    color: darkblue;
+    color: white;
 }
 
 a:visited {
-    color: darkblue;
+    color: palevioletred;
 }
 
 a:hover{
@@ -67,17 +67,22 @@ footer {
     position: fixed;
     bottom:0;
     width : 100%;
-    height: 100pt;
+    height: 120pt;
 
-    background-color: darkorchid;
+    background-color:darkblue;
     float: middle;
 
     font-size:12pt;
+    color:white;
     
     margin-top:0;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;   
+}
+
+.footerLink{
+    color:lightpink;
 }
 
 
@@ -110,9 +115,6 @@ footer {
 
 }   
 
-.project{
-    color: darkblue;
-}
 
 /*project*/
 
@@ -130,8 +132,34 @@ footer {
     color: grey;
     font-size: 8pt;
 }
-
-.imgLink{
-    
+/*project menu page */
+.project{
+    position: relative;
+    text-align: center;
+    margin-left: -20vw;
 }
 
+.projectImg{
+   
+    height : 200px;
+    
+    overflow : hidden;
+    object-fit: cover;
+    width: 60%;
+
+    opacity:0.75;
+    filter: brightness(125%);
+}
+.projectText{
+    
+    background-color: rgb(245, 212, 217);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:darkblue;
+}
+
+.project:hover{
+    margin-left : -15vw;
+}
