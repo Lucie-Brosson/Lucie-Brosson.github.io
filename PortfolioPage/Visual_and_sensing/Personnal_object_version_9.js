@@ -330,7 +330,7 @@ world.addBody(ground)
      })
 
      world.addBody(this.object_physics);
-   }
+   }  
 
    object_animation(){
      this.creation_of_object();
@@ -433,6 +433,7 @@ function animate() {
 
    hover_Objects();
    reset_Objects();
+   object_gravity();
 
    ground.quaternion.setFromEuler(-Math.PI / 2, 0, 0);
 
