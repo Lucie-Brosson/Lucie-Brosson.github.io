@@ -1,3 +1,16 @@
+/* font*/
+@font-face {
+    font-family : titre;
+    src: url("https://lucie-brosson.github.io/Ressource/fonts/Format_1452.otf")
+}
+
+@font-face {
+    font-family : texte;
+    src: url("https://lucie-brosson.github.io/Ressource/fonts/GeosansLight.ttf")
+}
+
+/* rest of the website*/
+
 *{
     margin: 0;
     padding: 0;
@@ -15,26 +28,30 @@ h1 {
     margin-right: 10%;
 
     font-size: clamp(50pt,8vw ,80pt);
-    font-family: "Bahnschrift"; 
+    font-family: titre; 
     text-align: center;
     color: darkblue;
 }
 
 h2{
+    font-family: titre;
     color: darkblue;
 }
 
 h3 {
     color: darkblue;
+    font-family: titre;
     font-size: 5vw;
     margin-left: 20vw;
 }
 
 h4{
+    font-family: texte;
    color:darkblue;
 }
 
 p {
+    font-family: texte;
     margin-top: 2vw;
     margin-left: 15%;
     margin-right: 10%;
