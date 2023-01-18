@@ -26,6 +26,8 @@ h2{
 
 h3 {
     color: darkblue;
+    font-size: 5vw;
+    margin-left: 20vw;
 }
 
 h4{
@@ -115,13 +117,6 @@ footer {
 
 }   
 
-
-/*project*/
-
-.projectPortfolio {
-    color: darkblue;
-}
-
 /*projet*/
 
 .Croquis {
@@ -138,6 +133,7 @@ footer {
     text-align: center;
     margin-left: -20vw;
 }
+
 
 .projectImg{
    
@@ -163,4 +159,43 @@ footer {
 .project:hover{
     margin-left : -15vw;
 }
+
+/* Portfolio Page*/
+
+.portfolio {
+    padding: 2vw;
+}
+
+.projectPortfolio {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+.projectPortfolioImg{  
+    height : 30vw;
+    width: 30vw;
+    
+    overflow : hidden;
+    object-fit: cover;
+    width: 60%; 
+
+    opacity:0.75;
+    filter: brightness(125%);
+}
+.projectPortfolioText{
+    color:darkblue;
+    font-size: 2vw;
+    width: 25vw;
+    margin-left : 10vw;
+}
+
+.projectPortfolio:hover{
+    margin-left : -2vw;
+}
+
+.space{
+    margin-bottom : 20vw;
+}
+
 
