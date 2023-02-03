@@ -68,10 +68,6 @@ img {
     width: clamp(40pt,60vw,500pt);
 }
 
-img:hover{
-    width: clamp(40pt,75vw,1000pt);
-}
-
 a{
     margin-left: 10%;
     font-family: Helvetica;
