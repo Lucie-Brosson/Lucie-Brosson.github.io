@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Game of Shame</title>
+        <link rel="stylesheet" type="text/css" href="Game.css" />
+       
+
+    </head>
+
+    <body>
+      <script src="Game.js"></script>
+
+        <h1>The Game of Shame</h1>
+        <p>Attention à celui qui ouvre cette page, la soirée risque d'être enflamée</p>
+
+        <p>Choisissez des catégories</p>
+
+        <p>Catégorie</p>
+        <fieldset>
+            <legend>Choisie les catégories qui t'intéresse</legend>
+        
+            <div>
+              <input type="checkbox" id="Jeux1" name="Jeux1" value="jeux2">
+              <label for="Jeux1">Jeux 1</label>
+            </div>
+        
+            <div>
+              <input type="checkbox" id="Jeux 2" name="Jeux2">
+              <label for="Jeux2">Jeux 2</label>
+            </div>
+        </fieldset>
+
+        <p>Questions</p>
+        <p id="Question">Change question here</p>
+        <p>Conséquence</p>
+        <p id="Consequences">Conséquence à changer</p>
+
+        <button onclick="NextQuestion()">Next</button>
+
+        <button onclick="StartGame()">Start the Parrrty</button>
+
+        <p>Le consentement est primordiale. Il faut s'ammuser et donc ne pas forcer à boire ou à faire des actions qui gène qui que ce soit</p>
+    </body>
+</html>
