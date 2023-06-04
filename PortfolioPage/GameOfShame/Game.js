@@ -59,7 +59,7 @@ async function getCheckBoxValue(){
     console.log('working')
     for (var i = 0; i<GameName.length; i++){
         console.log(i)
-        console.log(document.getElementById(GameName[i]).checked)
+        //console.log(document.getElementById(GameName[i]).checked)
         if (document.getElementById(GameName[i]).checked == true){
             GameSelected.push(GameName[i])
         }

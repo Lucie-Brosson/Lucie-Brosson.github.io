@@ -1,0 +1,47 @@
+body { 
+    background-color: rgb(15, 9, 43);
+
+    text-align: left;
+    color:rgb(234, 236, 227);
+
+    padding : 5%;
+}
+
+h1{
+    text-align: center;
+    font-size: 10em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2{
+    text-align: center;
+    font-size: 5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-size: 4em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.secondaire {
+    font-size: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#HolderOfTheGame{
+    font-size: 3em;
+}
+
+.CheckBox{
+    width: 2.5em;
+    height : 2.5em;
+}
+
+button{
+    background-color: rgb(150, 230, 219);
+    padding: 15px 32px;
+    font-size: 4em;
+ 
+}
+

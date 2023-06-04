@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>The Game of Shame</title>
-        <link rel="stylesheet" type="text/css" href="Game.css" />
+        <link rel="stylesheet" type="text/css" href="./Game.css" />
        
 
     </head>
@@ -11,32 +11,33 @@
       <script src="Game.js"></script>
 
         <h1>The Game of Shame</h1>
-        <p>Attention à celui qui ouvre cette page, la soirée risque d'être enflamée</p>
 
-        <p>Choisissez des catégories</p>
+        <p class ="secondaire">Attention à celui qui ouvre cette page, la soirée risque d'être enflammée</p>
+
+        <p class="secondaire">Choisissez des catégories</p>
       
       
-        <p>Catégorie</p>
+        <h2>Catégorie</h2>
         <fieldset id="HolderOfTheGame">
             <legend>Choisie les catégories qui t'intéresse</legend>
 
-              <input type="checkbox" id="Jeux1" name="Game" value="jeux2">
+              <input type="checkbox" class="CheckBox" id="Jeux1" name="Game" value="jeux2">
               <label for="Jeux1">Jeux 1</label>
 
-              <input type="checkbox" id="Jeux2" name="Game">
+              <input type="checkbox" class="CheckBox" id="Jeux2" name="Game">
               <label for="Jeux2">Jeux 2</label>
             
         </fieldset>
 
-        <p>Questions</p>
+        <h2>Questions</h2>
         <p id="Question">Change question here</p>
-        <p>Conséquence</p>
+        <h2>Conséquence</h2>
         <p id="Consequences">Conséquence à changer</p>
 
         <button onclick="NextQuestion()">Next</button>
 
         <button onclick="StartGame()">Start the Parrrty</button>
 
-        <p>Le consentement est primordiale. Il faut s'ammuser et donc ne pas forcer à boire ou à faire des actions qui gène qui que ce soit</p>
+        
     </body>
 </html>
