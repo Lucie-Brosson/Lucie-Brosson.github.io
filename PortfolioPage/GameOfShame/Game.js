@@ -34,20 +34,20 @@ async function getData(){
     const response = await fetch('./Game.csv');
     const data = await response.text();
 
-    console.log('get data is working');
     const rows = data.split('\n');
 
     rows.forEach(item => {
-        console.log('get data is working 41');
+
         //if columns[1] == id game checked 
         const columns = item.split(',');
         if (columns[1] == GameSelected){
-            console.log('get data is working 415');
             console.log(columns[1])
             Questions.push()
         }
         
     })
+
+    return Questions
 }
 
 ////////////////////////////////////////////////////////////////////
@@ -74,14 +74,11 @@ async function getCheckBoxValue(){
 ////////////////////////////////////////////////////////////////////
 function NextQuestion(){
     console.log("new question")
-    if (HasGameStarted && Questions.length > 0){
+    if (HasGameStarted){
         randomQuestion = Math.floor(Math.random() * Questions.length)
         console.log("the question are here")
         document.getElementById("Question").innerHTML = Questions[randomQuestion];
         delete Questions[randomQuestion]
-    }
-    if (Questions.length == 0){
-        document.getElementById("Question").innerHTML = "The Game has ended, start again with a new set of questions";       
     }
 }
 
