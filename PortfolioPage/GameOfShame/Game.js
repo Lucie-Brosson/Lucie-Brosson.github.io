@@ -11,21 +11,19 @@
 //////////////// Variable 
 ////////////////////////////////////////////////////////////////////
 console.log('js linked')
-var gameQuestion = $.csv.toObjects(csv)
 var HasGameStarted = false
 
-const btnStart = document.querySelector('#start')
+var GameSelected = []
+var Questions = []  
 
+var randomQuestion = null
+
+const btnStart = document.querySelector('#start')
 const btnNext = document.querySelector('#Next')
 const btnRestart = document.querySelector('#Restart')
 
+var checkBoxes = HolderOfTheGame.querySelectorAll('input[type=checkbox]')
 
-////////////////////////////////////////////////////////////////////
-//////////////// Variable 
-////////////////////////////////////////////////////////////////////
-
-// get id checkbox jeux 1 ...
-// get 
 ////////////////////////////////////////////////////////////////////
 //////////////// Get CVS DATA
 ////////////////////////////////////////////////////////////////////
@@ -42,8 +40,11 @@ async function getData(){
     rows.forEach(item => {
         //if columns[1] == id game checked 
         const columns = item.split(',');
-        GameQuestion.push(columns[0]);
-        Game.push(columns[1]);
+        if (columns[1] == GameSelected){
+            console.log(columns[1])
+            Questions.push()
+        }
+        
     })
 }
 
@@ -53,14 +54,28 @@ async function getData(){
 function init(){
     print('hello')
 }
+
+async function getCheckBoxValue(){
+    checkBoxes.forEach(item=>{
+        if (item.checked){
+            console.log(item.value)
+            GameSelected.push(item.value)
+        }
+    })
+}
 ////////////////////////////////////////////////////////////////////
 //////////////// Button action 
 ////////////////////////////////////////////////////////////////////
 function NextQuestion(){
     console.log("new question")
-    if (HasGameStarted){
+    if (HasGameStarted && Questions.length > 0){
+        randomQuestion = Math.floor(Math.random() * Questions.length)
         console.log("the question are here")
-        document.getElementById("Question").innerHTML = "Hello World";
+        document.getElementById("Question").innerHTML = Questions[randomQuestion];
+        delete Questions[randomQuestion]
+    }
+    if (Questions.length == 0){
+        document.getElementById("Question").innerHTML = "The Game has ended, start again with a new set of questions";       
     }
 }
 
@@ -68,6 +83,7 @@ function NextQuestion(){
 function StartGame(){
     console.log("The party is starting")
     HasGameStarted = true;
+    getCheckBoxValue()
     getData()
 }
 
