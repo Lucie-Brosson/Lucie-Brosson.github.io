@@ -11,7 +11,7 @@
 //////////////// Variable 
 ////////////////////////////////////////////////////////////////////
 console.log('js linked')
-//var gameQuestion = $.csv.toObjects(csv)
+var gameQuestion = $.csv.toObjects(csv)
 var HasGameStarted = false
 
 const btnStart = document.querySelector('#start')
