@@ -13,6 +13,7 @@
 console.log('js linked')
 var HasGameStarted = false
 
+var GameName = ["Jeux1","Jeux2","beep"]
 var GameSelected = []
 var Questions = []  
 
@@ -22,9 +23,7 @@ const btnStart = document.querySelector('#start')
 const btnNext = document.querySelector('#Next')
 const btnRestart = document.querySelector('#Restart')
 
-var checkBoxRetreiver = document.getElementById("#HolderOfTheGame")
-var checkBoxes = checkBoxRetreiver.querySelectorAll('input[type=checkbox]')
-
+var checkBoxesGame = document.querySelectorAll('input[name="Game"]:checked')
 ////////////////////////////////////////////////////////////////////
 //////////////// Get CVS DATA
 ////////////////////////////////////////////////////////////////////
@@ -57,12 +56,16 @@ function init(){
 }
 
 async function getCheckBoxValue(){
-    checkBoxes.forEach(item=>{
-        if (item.checked){
-            console.log(item.value)
-            GameSelected.push(item.value)
+    console.log('working')
+    for (var i = 0; i<GameName.length; i++){
+        console.log(i)
+        console.log(document.getElementById(GameName[i]).checked)
+        if (document.getElementById(GameName[i]).checked == true){
+            GameSelected.push(GameName[i])
         }
-    })
+    }
+    return GameSelected
+    
 }
 ////////////////////////////////////////////////////////////////////
 //////////////// Button action 
@@ -84,7 +87,10 @@ function NextQuestion(){
 function StartGame(){
     console.log("The party is starting")
     HasGameStarted = true;
+
     getCheckBoxValue()
+
+    console.log(GameSelected)
     getData()
 }
 
