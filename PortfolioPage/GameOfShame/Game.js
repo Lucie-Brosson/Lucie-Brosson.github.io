@@ -22,7 +22,8 @@ const btnStart = document.querySelector('#start')
 const btnNext = document.querySelector('#Next')
 const btnRestart = document.querySelector('#Restart')
 
-var checkBoxes = HolderOfTheGame.querySelectorAll('input[type=checkbox]')
+var checkBoxRetreiver = document.getElementById("#HolderOfTheGame")
+var checkBoxes = checkBoxRetreiver.querySelectorAll('input[type=checkbox]')
 
 ////////////////////////////////////////////////////////////////////
 //////////////// Get CVS DATA
