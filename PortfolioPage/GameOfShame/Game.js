@@ -38,9 +38,11 @@ async function getData(){
     const rows = data.split('\n');
 
     rows.forEach(item => {
+        console.log('get data is working 41');
         //if columns[1] == id game checked 
         const columns = item.split(',');
         if (columns[1] == GameSelected){
+            console.log('get data is working 415');
             console.log(columns[1])
             Questions.push()
         }
