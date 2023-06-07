@@ -47,7 +47,7 @@ async function getData(){
         }
         
     })
-    print(Questions)
+    console.log(Questions)
     return Questions
 }
 
