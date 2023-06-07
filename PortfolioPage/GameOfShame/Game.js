@@ -11,9 +11,11 @@
 //////////////// Variable 
 ////////////////////////////////////////////////////////////////////
 console.log('js linked')
+Start()
+
 var HasGameStarted = false
 
-var GameName = ["Jeux1","Jeux2","beep","TireGroupe","Rules","Competition","NeverHaveIEver","MostLikely","DoYouKnowMe","Juduku","Debat","TopTen","MidTruth","DeepTruth","HotTruth","WouldYouRather","Base","DareAssis","DareDebour","DareHot"]
+var GameName = ["Jeux1","Jeux2","TireGroupe","Rules","Competition","NeverHaveIEver","MostLikely","DoYouKnowMe","Juduku","Debat","TopTen","MidTruth","DeepTruth","HotTruth","WouldYouRather","Base","DareAssis","DareDebour","DareHot"]
 var GameSelected = []
 var Questions = []  
 
@@ -24,6 +26,33 @@ const btnNext = document.querySelector('#Next')
 const btnRestart = document.querySelector('#Restart')
 
 var checkBoxesGame = document.querySelectorAll('input[name="Game"]:checked')
+
+
+
+////////////////////////////////////////////////////////////////////
+//////////////// Question 
+////////////////////////////////////////////////////////////////////
+function Start(){
+    console.log('hello')
+    getData()
+}
+
+async function getCheckBoxValue(){
+    console.log('working')
+    console.log(GameName)
+    for (var i = 0; i<GameName.length; i++){
+        console.log(i)
+        console.log(GameName[i])
+        //console.log(document.getElementById(GameName[i]).checked)
+        if (document.getElementById(GameName[i]).checked == true){
+            GameSelected.push(GameName[i])
+            Questions.push()
+        }
+    }
+    return GameSelected
+    
+}
+
 ////////////////////////////////////////////////////////////////////
 //////////////// Get CVS DATA
 ////////////////////////////////////////////////////////////////////
@@ -37,7 +66,7 @@ async function getData(){
     const rows = data.split('\n');
 
     rows.forEach(item => {
-
+        console.log("worked")
         //if columns[1] == id game checked 
         const columns = item.split(',');
         if (columns[1] == GameSelected){
@@ -47,30 +76,10 @@ async function getData(){
         }
         
     })
-    console.log(Questions)
+   // console.log(Questions)
     return Questions
 }
 
-////////////////////////////////////////////////////////////////////
-//////////////// Question 
-////////////////////////////////////////////////////////////////////
-function init(){
-    print('hello')
-}
-
-async function getCheckBoxValue(){
-    console.log('working')
-    for (var i = 0; i<GameName.length; i++){
-        console.log(i)
-        //console.log(document.getElementById(GameName[i]).checked)
-        if (document.getElementById(GameName[i]).checked == true){
-            GameSelected.push(GameName[i])
-            Questions.push()
-        }
-    }
-    return GameSelected
-    
-}
 ////////////////////////////////////////////////////////////////////
 //////////////// Button action 
 ////////////////////////////////////////////////////////////////////
@@ -94,9 +103,8 @@ function StartGame(){
 
     getCheckBoxValue()
 
-    console.log(GameSelected)
-    getData()
-    console.log(Questions)
+    console.log("Jeux "+GameSelected)   
+    console.log("Questions "+ Questions)
 
 }
 
