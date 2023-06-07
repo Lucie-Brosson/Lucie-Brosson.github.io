@@ -13,7 +13,7 @@
 console.log('js linked')
 var HasGameStarted = false
 
-var GameName = ["Jeux1","Jeux2","beep"]
+var GameName = ["Jeux1","Jeux2","beep","TireGroupe","Rules","Competition","NeverHaveIEver","MostLikely","DoYouKnowMe","Juduku","Debat","TopTen","MidTruth","DeepTruth","HotTruth","WouldYouRather","Base","DareAssis","DareDebour","DareHot"]
 var GameSelected = []
 var Questions = []  
 
@@ -47,7 +47,7 @@ async function getData(){
         }
         
     })
-
+    print(Questions)
     return Questions
 }
 
