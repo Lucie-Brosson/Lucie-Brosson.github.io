@@ -43,7 +43,7 @@ async function getData(){
         if (columns[1] == GameSelected){
             console.log(columns[1])
             Questions.push(columns[0])
-            print(Questions)
+            console.log(Questions)
         }
         
     })
