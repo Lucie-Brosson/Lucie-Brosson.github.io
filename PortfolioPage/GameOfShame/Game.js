@@ -11,6 +11,7 @@
 //////////////// Variable 
 ////////////////////////////////////////////////////////////////////
 console.log('js linked')
+console.log("update 1 mot à changer")
 Start()
 
 var HasGameStarted = false
