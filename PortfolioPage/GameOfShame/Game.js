@@ -42,7 +42,8 @@ async function getData(){
         const columns = item.split(',');
         if (columns[1] == GameSelected){
             console.log(columns[1])
-            Questions.push()
+            Questions.push(columns[0])
+            print(Questions)
         }
         
     })
@@ -64,6 +65,7 @@ async function getCheckBoxValue(){
         //console.log(document.getElementById(GameName[i]).checked)
         if (document.getElementById(GameName[i]).checked == true){
             GameSelected.push(GameName[i])
+            Questions.push()
         }
     }
     return GameSelected
@@ -77,6 +79,7 @@ function NextQuestion(){
     if (HasGameStarted){
         randomQuestion = Math.floor(Math.random() * Questions.length)
         console.log("the question are here")
+        console.log(Questions[randomQuestion])
         document.getElementById("Question").innerHTML = Questions[randomQuestion];
         delete Questions[randomQuestion]
     }
