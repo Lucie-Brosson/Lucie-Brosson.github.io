@@ -76,6 +76,8 @@ async function getCheckBoxValue(){
 ////////////////////////////////////////////////////////////////////
 function NextQuestion(){
     console.log("new question")
+    console.log(Questions)
+
     if (HasGameStarted){
         randomQuestion = Math.floor(Math.random() * Questions.length)
         console.log("the question are here")
@@ -94,6 +96,8 @@ function StartGame(){
 
     console.log(GameSelected)
     getData()
+    console.log(Questions)
+
 }
 
 function Restart(){
