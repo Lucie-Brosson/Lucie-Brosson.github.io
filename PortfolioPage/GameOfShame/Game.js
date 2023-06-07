@@ -34,7 +34,7 @@ var checkBoxesGame = document.querySelectorAll('input[name="Game"]:checked')
 ////////////////////////////////////////////////////////////////////
 function Start(){
     console.log('hello')
-    getData()
+    //getData()
 }
 
 async function getCheckBoxValue(){
@@ -105,6 +105,7 @@ function StartGame(){
 
     console.log("Jeux "+GameSelected)   
     console.log("Questions "+ Questions)
+    getData()
 
 }
 
