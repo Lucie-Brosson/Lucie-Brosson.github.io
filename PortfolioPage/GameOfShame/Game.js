@@ -34,7 +34,7 @@ var checkBoxesGame = document.querySelectorAll('input[name="Game"]:checked')
 //////////////// Question 
 ////////////////////////////////////////////////////////////////////
 function Start(){
-    console.log('hello')
+   // console.log('hello')
     //getData()
 }
 
@@ -42,13 +42,19 @@ async function getCheckBoxValue(){
     console.log('working')
     console.log(GameName)
     for (var i = 0; i<GameName.length; i++){
-        console.log(i)
-        console.log(GameName[i])
-        //console.log(document.getElementById(GameName[i]).checked)
-        if (document.getElementById(GameName[i]).checked == true){
-            GameSelected.push(GameName[i])
-            Questions.push()
+        if (document.getElementById(GameName[i])){
+            console.log(i)
+            console.log(GameName[i])
+            console.log(document.getElementById(GameName[i]).checked)
+            if (document.getElementById(GameName[i]).checked == true){
+                GameSelected.push(GameName[i])
+                Questions.push()
+            }
+        }else{
+            console.log("faake")
+            return
         }
+        
     }
     return GameSelected
     
