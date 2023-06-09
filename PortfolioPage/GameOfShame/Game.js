@@ -11,7 +11,7 @@
 //////////////// Variable 
 ////////////////////////////////////////////////////////////////////
 console.log('js linked')
-console.log("update 1 mot à changer")
+console.log("update 2 mot à changer")
 Start()
 
 var HasGameStarted = false
@@ -75,6 +75,7 @@ async function getData(){
     rows.forEach(item => {
         console.log("worked")
         //if columns[1] == id game checked 
+        console.log(rows)
         const columns = item.split(',');
         if (columns[1] == GameSelected){
             console.log(columns[1])
