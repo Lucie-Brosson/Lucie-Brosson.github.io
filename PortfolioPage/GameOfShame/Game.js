@@ -67,7 +67,7 @@ async function getCheckBoxValue(){
 async function getData(){
     console.log('get data is working');
 
-    const response = await fetch('./Game.csv');
+    const response = await fetch('./Game1.csv');
     const data = await response.text();
 
     const rows = data.split('\n');
