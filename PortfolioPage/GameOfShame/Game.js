@@ -80,11 +80,11 @@ async function getData(){
         if (columns[1] == GameSelected){
             console.log(columns[1])
             Questions.push(columns[0])
-            console.log(Questions)
+          //  console.log(Questions)
         }
         
     })
-   // console.log(Questions)
+    console.log(Questions)
     return Questions
 }
 
@@ -92,15 +92,17 @@ async function getData(){
 //////////////// Button action 
 ////////////////////////////////////////////////////////////////////
 function NextQuestion(){
+    var a = 0
     console.log("new question")
     console.log(Questions)
 
     if (HasGameStarted){
-        randomQuestion = Math.floor(Math.random() * Questions.length)
+       // randomQuestion = Math.floor(Math.random() * Questions.length)
         console.log("the question are here")
-        console.log(Questions[randomQuestion])
+        console.log(Questions[a)
         document.getElementById("Question").innerHTML = Questions[randomQuestion];
         delete Questions[randomQuestion]
+        a++
     }
 }
 
