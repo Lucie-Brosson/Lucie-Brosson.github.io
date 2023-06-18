@@ -11,7 +11,7 @@
 //////////////// Variable 
 ////////////////////////////////////////////////////////////////////
 console.log('js linked')
-console.log("update 2 mot à changer")
+console.log("update 3 mot à changer")
 Start()
 
 var HasGameStarted = false
@@ -99,7 +99,7 @@ function NextQuestion(){
     if (HasGameStarted){
        // randomQuestion = Math.floor(Math.random() * Questions.length)
         console.log("the question are here")
-        console.log(Questions[a)
+        console.log(Questions[a])
         document.getElementById("Question").innerHTML = Questions[randomQuestion];
         delete Questions[randomQuestion]
         a++
